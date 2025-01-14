@@ -18,8 +18,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/uas-pcc-rio-achyar-2025:latest -f Dockerfile .
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/uas-pcc-enzho-2025:latest -f Dockerfile .
 
       - name: Push Docker Image to DockerHub
         run: |
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/uas-pcc-rio-achyar-2025:latest
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/uas-pcc-enzho-2025:latest
